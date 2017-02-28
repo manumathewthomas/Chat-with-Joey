@@ -1,10 +1,13 @@
 # Seq2Seq ChatBot: Chat with Joey!
 
+## Introduction
+
+This project tries to reproduce the results of [A Neural Conversational Model](http://arxiv.org/abs/1506.05869) (aka the Google chatbot). It uses a RNN (seq2seq model) for sentence predictions. It is done using python and TensorFlow.
+
 ![alt tag](https://github.com/manumathewthomas/Chat-with-Joey/blob/master/Results/Good.png)
 
 #### Table of Contents
 
-* [Introduction](#introduction)
 * [Installation](#installation)
 * [Running](#running)
     * [Chatbot](#chatbot)
@@ -12,18 +15,14 @@
 * [Results](#results)
 * [Improvements](#improvements)
 
-## Presentation
 
-This work tries to reproduce the results of [A Neural Conversational Model](http://arxiv.org/abs/1506.05869) (aka the Google chatbot). It uses a RNN (seq2seq model) for sentence predictions. It is done using python and TensorFlow.
-
+# Misc
 The loading corpus part of the program is inspired by the Torch [neuralconvo](https://github.com/macournoyer/neuralconvo) from [macournoyer](https://github.com/macournoyer).
 
-For now, DeepQA support the following dialog corpus:
- * [Cornell Movie Dialogs](http://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html) corpus (default). Already included when cloning the repository.
- * [OpenSubtitles](http://opus.lingfil.uu.se/OpenSubtitles.php) (thanks to [Eschnou](https://github.com/eschnou)). Much bigger corpus (but also noisier). To use it, follow [those instructions](data/opensubs/) and use the flag `--corpus opensubs`.
- * Supreme Court Conversation Data (thanks to [julien-c](https://github.com/julien-c)). Available using `--corpus scotus`. See the [instructions](data/scotus/) for installation.
- * [Ubuntu Dialogue Corpus](https://arxiv.org/abs/1506.08909) (thanks to [julien-c](https://github.com/julien-c)). Available using `--corpus ubuntu`. See the [instructions](data/ubuntu/) for installation.
- * Your own data (thanks to [julien-c](https://github.com/julien-c)) by using a simple custom conversation format (See [here](data/lightweight) for more info).
+For now, ChatBot support the following dialog corpus:
+
+Friends data corpus - link
+
 
 ## Installation
 
