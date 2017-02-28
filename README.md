@@ -64,12 +64,13 @@ Some of the hyperparameter we played with are sentence-length, number of hidden-
   * We started training with sentences containing more than 20 words, It took more than 16 hours to train and still it was giving gibberish output. Then we reduced it to 10 words, although it was comparitively better we were not happy with the result. Finally we tried with 5 words and we got good outputs.
   
   * There are 2 RNN layers(encoder and decoder) and for each layer we put the number of hidden layers to 2048.
-  * 
-
-
+  * Changed the word embedding size to 256.
+  * Batch size to 512.
+  * Number of iteration to 200,000.
 
 ## Results
 
 ## Improvements
 
 ## Credits
+
