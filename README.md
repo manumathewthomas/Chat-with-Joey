@@ -26,10 +26,13 @@ To run the project you will need:
  * Redis
  * asgi_redis (at least 1.0)
  * [CKPT FILE](https://uofi.box.com/shared/static/vm0sm79oh037eh2kood6tvnaq010f75h.zip)
+ * [Dataset](https://uofi.box.com/shared/static/vz93xppov71cu5ubf14cb65i3pvwgmmw.txt)
 
 ## Running
 
 Once you have all the depenedencies ready, do the folowing:
+
+Download the dataset friends.txt and move it to data/lightweight/. 
 
 Extract the ckpt zip file, you will get a folder 'model-server' with the ckpt file and its associated files. Move this folder to /save. The server will look at the model present on save/model-server/model.ckpt
 
