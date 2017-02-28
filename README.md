@@ -52,11 +52,11 @@ python manage.py runserver 0.0.0.0:8888
 Go to the browser, if you are running it on a server then [ip-address]:8888, if you are on your local machine then localhost:8888
 
 ## Dataset
-For this project we used the [Friends TV Corpus](https://sites.google.com/site/friendstvcorpus/), which was currated by David Ayliffe for his masters thesis to study inter-gender and intra-gender conversation. We formatted the data t get conversation between Joey(a character) and several other characters. There are two reasons for this: 
+For this project we used the [Friends TV Corpus](https://sites.google.com/site/friendstvcorpus/), which was currated by David Ayliffe for his masters thesis to study inter-gender and intra-gender conversation. We formatted the data to get conversation between Joey(a character) and several other characters. There are two reasons for this: 
   
-  * We were targetting sentence which are less than 5 words 
+  * We were targeting sentences with 5 words. 
 
-  * Joey has the most conversations in the dataset
+  * Joey has the higest number of conversations in the dataset.
 
 ## Hyperparameters
 Some of the hyperparameter we played with are sentence-length, number of hidden-layers, word embedding-size, batch-size and number of iterations. One thing to note here is that there is no logic behind these values, it was based on trial and error approach.
