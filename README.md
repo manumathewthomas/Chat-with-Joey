@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project tries to reproduce the results of [A Neural Conversational Model](http://arxiv.org/abs/1506.05869) (aka the Google chatbot). It uses a RNN (seq2seq model) for sentence predictions. It is done using python and TensorFlow.
+This project tries to reproduce the results of [A Neural Conversational Model](http://arxiv.org/abs/1506.05869) (aka the Google chatbot) with the help of [DeepQA repo](https://github.com/Conchylicultor/DeepQA). It make use of a [seq2seq model RNN](https://www.tensorflow.org/tutorials/seq2seq) for sentence predictions. It is done using python and TensorFlow.
 
 ![alt tag](https://github.com/manumathewthomas/Chat-with-Joey/blob/master/Results/Good.png)
 
