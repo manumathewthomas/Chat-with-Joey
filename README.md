@@ -56,10 +56,15 @@ For this project we used the [Friends TV Corpus](https://sites.google.com/site/f
   
   * We were targeting sentences with 5 words. 
 
-  * Joey has the higest number of conversations in the dataset.
+  * Joey has the highest number of conversations in the dataset.
 
 ## Hyperparameters
-Some of the hyperparameter we played with are sentence-length, number of hidden-layers, word embedding-size, batch-size and number of iterations. One thing to note here is that there is no logic behind these values, it was based on trial and error approach.
+Some of the hyperparameter we played with are sentence-length, number of hidden-layers, word embedding-size, batch-size and number of iterations. One thing to note here is that there is no logic behind these values, it was purely based on a trial and error approach.
+
+  * We started training with sentences containing more than 20 words, It took more than 16 hours to train and still it was giving gibberish output. Then we reduced it to 10 words, although it was comparitively better we were not happy with the result. Finally we tried with 5 words and we got good outputs.
+  
+  * There are 2 RNN layers(encoder and decoder) and for each layer we put the number of hidden layers to 2048.
+  * 
 
 
 
