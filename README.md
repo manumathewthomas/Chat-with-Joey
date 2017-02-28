@@ -1,6 +1,6 @@
 # Seq2Seq ChatBot: Chat with Joey!
 
-![alt tag](https://github.com/manumathewthomas/Chat-with-Joey/edit/master/result/Good.png)
+![alt tag](https://github.com/manumathewthomas/Chat-with-Joey/blob/master/Results/Good.png)
 
 #### Table of Contents
 
