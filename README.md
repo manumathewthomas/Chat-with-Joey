@@ -53,9 +53,10 @@ Go to the browser, if you are running it on a server then [ip-address]:8888, if 
 
 ## Dataset
 For this project we used the [Friends TV Corpus](https://sites.google.com/site/friendstvcorpus/), which was currated by David Ayliffe for his masters thesis to study inter-gender and intra-gender conversation. We formatted the data t get conversation between Joey(a character) and several other characters. There are two reasons for this: 
-  1) We were targetting sentence which are less than 5 words 
+  
+  * We were targetting sentence which are less than 5 words 
 
-  2) Joey has the most conversations in the dataset
+  * Joey has the most conversations in the dataset
 
 ## Hyperparameters
 Some of the hyperparameter we played with are sentence-length, number of hidden-layers, word embedding-size, batch-size and number of iterations. One thing to note here is that there is no logic behind these values, it was based on trial and error approach.
