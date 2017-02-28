@@ -1,5 +1,7 @@
 # Seq2Seq ChatBot: Chat with Joey!
 
+![alt tag](https://github.com/manumathewthomas/Chat-with-Joey/edit/master/result/Good.png)
+
 #### Table of Contents
 
 * [Introduction](#introduction)
