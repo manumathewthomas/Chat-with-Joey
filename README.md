@@ -72,11 +72,14 @@ Some of the hyperparameter we played with are sentence-length, number of hidden-
 
 Below are some screenshots of our chat with the chatbot. It gives preety good results for standard questions as well as some character specific questions. 
 
-#Good results
+Good results
 <img src="https://github.com/manumathewthomas/Chat-with-Joey/blob/master/Results/Good.png" alt="alt text" width="850" height="500">
 
-#Random 
+Random 
 <img src="https://github.com/manumathewthomas/Chat-with-Joey/blob/master/Results/Random1.png" alt="alt text" width="850" height="500">
+
+<img src="https://github.com/manumathewthomas/Chat-with-Joey/blob/master/Results/Random2.png" alt="alt text" width="850" height="500">
+
 
 
 
