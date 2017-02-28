@@ -2,7 +2,7 @@
 
 #### Table of Contents
 
-* [Presentation](#presentation)
+* [Introduction](#introduction)
 * [Installation](#installation)
 * [Running](#running)
     * [Chatbot](#chatbot)
