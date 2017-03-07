@@ -105,5 +105,13 @@ A: Kidney Stones!
 
 ## Improvements
 
+* Increase the sentence length from 5 to 10.
+* Train multple characters from the show.
+* Make bots chat with each other.
+
 ## Credits
+
+* [A Neural Conversational Model](http://arxiv.org/abs/1506.05869)
+* [DeepQA repo](https://github.com/Conchylicultor/DeepQA)
+* [seq2seq model RNN](https://www.tensorflow.org/tutorials/seq2seq)
 
