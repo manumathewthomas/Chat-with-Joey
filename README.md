@@ -106,7 +106,7 @@ A: Kidney Stones!
 
 * Increase the sentence length from 5 to 10.
 * Train multple characters from the show.
-* Make bots chat with each other.
+* Perform inter-bot chatting.
 
 ## Credits
 
