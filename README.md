@@ -129,3 +129,10 @@ A: Kidney Stones!
 * [DeepQA repo](https://github.com/Conchylicultor/DeepQA)
 * [seq2seq model RNN](https://www.tensorflow.org/tutorials/seq2seq)
 
+## References
+[1]	Vinyals, Oriol, and Quoc Le. "A neural conversational model." arXiv preprint arXiv:1506.05869 (2015).
+[2]	Conchylicultor. "DeepQA." GitHub. N.p., Web. 27 Feb. 2017. <https://github.com/Conchylicultor/DeepQA>
+[3]	"Friends TV Corpus." David Ayliffe. N.p., n.d. Web. 22 Feb. 2017. https://sites.google.com/site/friendstvcorpus/
+[4]	
+[5]	Mikolov, Tomas, et al. "Distributed representations of words and phrases and their compositionality." Advances in neural information processing systems. 2013.
+[6]	Tensorflow. "Models." GitHub. N.p., Web. 22 Feb. 2017. <https://github.com/tensorflow/models>
