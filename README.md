@@ -75,6 +75,20 @@ Some of the hyperparameter we played with are sentence-length, number of hidden-
   * Batch size to 512.
   * Number of iteration to 200,000.
 
+## Deep Q&A - Model explanations
+The model is a standard seq2seq RNN with two LSTM cells one for the encoder and another for the decoder, and 256 hidden units in each RNN cell. For the purpose of our project, we changed the number of hidden layers to 2048. Basically, tensorflow processes the data inside the encoder cell during training by applying three operations that compute the state of the cell. First is forget which determines what info to throw away from the previous cell state. For example, data that is not necessary to compute the current cell state. Second is input that determines what information is to let in from the new state. Finally, output that produces the final output from the cell. The encoder converts the input into vector representation and sends it to the decoder. Then the decoder is trained on both the output sequence as well as the input representation from the encoder. Since the model works on two sequences, it can predict new elements of a sequence given prior elements of the sequence. Deep Q&A model is trained on conversational corpus to predict sentences in response to users’ queries. There are different modules for the purpose of training the model and for the evaluation of the model. The main module is chabot that contains most of the sub-modules for training and testing functionalities. This module reads the user prompt and runs the training or testing mode and eventually returns a trained model for the training mode or starts a chatbot session for the testing mode. A brief explanation is provided below for the main modules. 
+
+## Main modules
+* chatbot (module)
+Training mode: The training mode generates a graph for the model and starts a tensorflow session. The tensorflow session reads a batch of data and runs the training process to periodically minimize the loss function.  
+
+Testing mode: reads the user’s query and feeds the query to the encoder as a sequence of word ids. Then it runs the model with the batch of word ids to get a predicted sequence of word ids. The decoder then converts the predicted sequence into user readable string and returns it as an answer. 
+* Model (module)
+It contains the implementation of the model. It builds the model network and the computational graph with specified parameters. It basically creates two RNN cells using tensorflow, each of which with 2048 hidden layers. We increased the number of hidden layers from 256, and as mentioned above, it was purely based on a trial and error approach. There are also four defined tensorflow placeholders for the network inputs: encoder Inputs, decoder Inputs, decoder Targets same as decoder Inputs, and decoder Weights to adjust the learning to the target sentence size. The loss function is also defined using tensorflow seq2seq.sequence_loss call. 
+* Trainer (module)
+The Model module does not perform run on itself but just return the operators to do so. It’s actually the trainer module that launches the training with different parameters. 
+* Textdata (module) 
+This module loads the dialogue corpus and builds the vocabulary. It also performs all the processing of the dataset. Some of these operations include extractConversation, extractText
 ## Results
 
 Below are some screenshots of our chat with the chatbot. It gives preety good results for standard questions as well as some character specific questions. 
@@ -108,8 +122,7 @@ A: Kidney Stones!
 * Train multple characters from the show.
 * Perform inter-bot chatting.
 
-## Deep Q&A - Model explanations
-The model is a standard seq2seq RNN with two LSTM cells one for the encoder and another for the decoder, and 256 hidden units in each RNN cell. For the purpose of our project, we changed the number of hidden layers to 2048. Basically, tensorflow processes the data inside the encoder cell during training by applying three operations that compute the state of the cell. First is forget which determines what info to throw away from the previous cell state. For example, data that is not necessary to compute the current cell state. Second is input that determines what information is to let in from the new state. Finally, output that produces the final output from the cell. The encoder converts the input into vector representation and sends it to the decoder. Then the decoder is trained on both the output sequence as well as the input representation from the encoder. Since the model works on two sequences, it can predict new elements of a sequence given prior elements of the sequence. Deep Q&A model is trained on conversational corpus to predict sentences in response to users’ queries. There are different modules for the purpose of training the model and for the evaluation of the model. The main module is chabot that contains most of the sub-modules for training and testing functionalities. This module reads the user prompt and runs the training or testing mode and eventually returns a trained model for the training mode or starts a chatbot session for the testing mode. A brief explanation is provided below for the main modules. 
+
 ## Credits
 
 * [A Neural Conversational Model](http://arxiv.org/abs/1506.05869)
