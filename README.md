@@ -4,7 +4,7 @@
 
 Chat with Joey is a TensorFlow implementation of [A Neural Conversational Model](http://arxiv.org/abs/1506.05869) (aka the Google chatbot) with the help of [DeepQA repo](https://github.com/Conchylicultor/DeepQA). It make use of a [seq2seq model RNN](https://www.tensorflow.org/tutorials/seq2seq) for sentence predictions. The chatbot is designed to mimic the personality of Joey, a character from the tv-show "F.R.I.E.N.D.S" (more about this under dataset). 
 
-# Demo Video[Link](https://www.youtube.com/watch?v=MbjKl4fUdcI)
+# Demo Video [Link](https://www.youtube.com/watch?v=MbjKl4fUdcI)
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/MbjKl4fUdcI/0.jpg)](https://www.youtube.com/watch?v=MbjKl4fUdcI)
 
