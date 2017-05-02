@@ -108,6 +108,8 @@ A: Kidney Stones!
 * Train multple characters from the show.
 * Perform inter-bot chatting.
 
+## Deep Q&A - Model explanations
+The model is a standard seq2seq RNN with two LSTM cells one for the encoder and another for the decoder, and 256 hidden units in each RNN cell. For the purpose of our project, we changed the number of hidden layers to 2048. Basically, tensorflow processes the data inside the encoder cell during training by applying three operations that compute the state of the cell. First is forget which determines what info to throw away from the previous cell state. For example, data that is not necessary to compute the current cell state. Second is input that determines what information is to let in from the new state. Finally, output that produces the final output from the cell. The encoder converts the input into vector representation and sends it to the decoder. Then the decoder is trained on both the output sequence as well as the input representation from the encoder. Since the model works on two sequences, it can predict new elements of a sequence given prior elements of the sequence. Deep Q&A model is trained on conversational corpus to predict sentences in response to users’ queries. There are different modules for the purpose of training the model and for the evaluation of the model. The main module is chabot that contains most of the sub-modules for training and testing functionalities. This module reads the user prompt and runs the training or testing mode and eventually returns a trained model for the training mode or starts a chatbot session for the testing mode. A brief explanation is provided below for the main modules. 
 ## Credits
 
 * [A Neural Conversational Model](http://arxiv.org/abs/1506.05869)
